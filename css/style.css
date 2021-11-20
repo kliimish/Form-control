@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Shippori+Antique&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #dee2e6;
+}
+
+.control > h2 {
+  font-family: "Fredoka One", cursive;
+  text-align: start;
+  width: 75%;
+  padding: 5px;
+  background-color: #fcab10;
+}
+
+.control > ::-webkit-input-placeholder {
+  font-family: "Shippori Antique", sans-serif;
+}
+
+.control > :-ms-input-placeholder {
+  font-family: "Shippori Antique", sans-serif;
+}
+
+.control > ::-ms-input-placeholder {
+  font-family: "Shippori Antique", sans-serif;
+}
+
+.control > ::placeholder {
+  font-family: "Shippori Antique", sans-serif;
+}
+
+.container {
+  border: 2px solid #6c757d;
+  border-radius: 5px;
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  height: 80%;
+}
+
+.form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  place-items: center;
+  grid-row-gap: 10px;
+}
+
+.container {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  padding: 20px;
+}
+
+.control > input {
+  display: block;
+  background-color: #ebebeb;
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.control > input:focus {
+  background-color: white;
+  font-family: "Shippori Antique", sans-serif;
+}
+
+.control > label {
+  display: block;
+  width: 400px;
+  height: 30px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-family: "Shippori Antique", sans-serif;
+  font-weight: 600;
+}
+
+.submit {
+  position: relative;
+  right: 5%;
+  top: 15%;
+  padding: 10px;
+  width: 20%;
+  background-color: #fcab10;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  font-family: "Shippori Antique", sans-serif;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: black;
+  border: 1px solid #fcab10;
+  color: #fcab10;
+}
+
+.all--done > input {
+  border: 3px solid #38b000;
+  background-color: #c9ffb0;
+}
+
+.error > input {
+  border: 3px solid #dc2f02;
+  background-color: #ffe5de;
+}
+
+small {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */

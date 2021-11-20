@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Shippori+Antique&display=swap");
+$color_error: #dc2f02;
+$color_all_ok: #38b000;
+$font_main: "Shippori Antique", sans-serif;
+$font_display: "Fredoka One", cursive;
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #dee2e6;
+}
+.control > h2 {
+  font-family: $font_display;
+  text-align: start;
+  width: 75%;
+  padding: 5px;
+  background-color: #fcab10;
+}
+
+.control > ::placeholder {
+  font-family: $font_main;
+}
+.container {
+  border: 2px solid #6c757d;
+  border-radius: 5px;
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  height: 80%;
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  grid-row-gap: 10px;
+}
+.container {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  padding: 20px;
+}
+.control > input {
+  display: block;
+  background-color: darken(white, 8%);
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.control > input:focus {
+  background-color: white;
+  font-family: $font_main;
+}
+.control > label {
+  display: block;
+  width: 400px;
+  height: 30px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-family: $font_main;
+  font-weight: 600;
+}
+
+.submit {
+  position: relative;
+  right: 5%;
+  top: 15%;
+  padding: 10px;
+  width: 20%;
+  background-color: #fcab10;
+  outline: none;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  font-family: $font_main;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: black;
+    border: 1px solid #fcab10;
+    color: #fcab10;
+  }
+}
+
+.all--done > input {
+  border: 3px solid $color_all_ok;
+  background-color: lighten($color_all_ok, 50%);
+}
+.error > input {
+  border: 3px solid $color_error;
+  background-color: lighten($color_error, 50%);
+}
+small {
+  color: red;
+}

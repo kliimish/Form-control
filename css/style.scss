@@ -92,12 +92,13 @@ body {
 
 .all--done > input {
   border: 3px solid $color_all_ok;
-  background-color: lighten($color_all_ok, 50%);
+  background-color: lighten($color_all_ok, 70%);
 }
 .error > input {
   border: 3px solid $color_error;
-  background-color: lighten($color_error, 50%);
+  background-color: lighten($color_error, 70%);
 }
 small {
   color: red;
+  font-family: $font_main;
 }

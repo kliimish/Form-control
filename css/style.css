@@ -114,15 +114,16 @@ body {
 
 .all--done > input {
   border: 3px solid #38b000;
-  background-color: #c9ffb0;
+  background-color: white;
 }
 
 .error > input {
   border: 3px solid #dc2f02;
-  background-color: #ffe5de;
+  background-color: white;
 }
 
 small {
   color: red;
+  font-family: "Shippori Antique", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
